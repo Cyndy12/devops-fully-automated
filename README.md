@@ -8,7 +8,7 @@
     Fork GitHub Repository by using the existing repo "devops-fully-automated" (https://github.com/Cyndy12/devops-fully-automated.git)     
     - Go to GitHub (github.com)
     - Login to your GitHub Account
-    - **Fork repository "devops-fully-automated" (https://github.com/mariusforreal/devops-fully-automated-1 & name it "devops-fully-automated"**
+    - **Fork repository "devops-fully-automated" (https://github.com/Cyndy12/devops-fully-automated & name it "devops-fully-automated"**
     - Clone your newly created repo to your local
 
 2) ###### Jenkins/Maven/Ansible
