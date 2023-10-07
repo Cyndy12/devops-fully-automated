@@ -17,7 +17,7 @@
     - Security Group (Open): 8080, 9100 and 22 to 0.0.0.0/0
     - Key pair: Select or create a new keypair
     - **Attach Jenkins server with IAM role having "AdministratorAccess"**
-    - User data (Copy the following user data): https://github.com/mariusforreal/devops-fully-automated-1-scripts/blob/main/jenkins-maven-ansible-setup.sh
+    - User data (Copy the following user data): https://github.com/Cyndy12/devops-fully-automated-scripts/blob/main/jenkins-maven-ansible-setup.sh
     - Launch Instance
     - After launching this Jenkins server, attach a tag as **Key=Application, value=jenkins**
 
@@ -26,7 +26,7 @@
     - Instance type: t2.medium
     - Security Group (Open): 9000, 9100 and 22 to 0.0.0.0/0
     - Key pair: Select or create a new keypair
-    - User data (Copy the following user data): https://github.com/mariusforreal/devops-fully-automated-1-scripts/blob/main/sonarqube-setup.sh
+    - User data (Copy the following user data): https://github.com/Cyndy12/devops-fully-automated-scripts/blob/main/sonarqube-setup.sh
     - Launch Instance
 
 4) ###### Nexus
@@ -34,7 +34,7 @@
     - Instance type: t2.medium
     - Security Group (Open): 8081, 9100 and 22 to 0.0.0.0/0
     - Key pair: Select or create a new keypair
-    - User data (Copy the following user data): https://github.com/mariusforreal/devops-fully-automated-1-scripts/blob/main/nexus-setup.sh
+    - User data (Copy the following user data): https://github.com/Cyndy12/devops-fully-automated-scripts/blob/main/nexus-setup.sh
     - Launch Instance
 
 5) ###### EC2 (Dev/Stage/Prod)
@@ -42,7 +42,7 @@
     - Instance type: t2.micro
     - Security Group (Open): 8080, 9100 and 22 to 0.0.0.0/0
     - Key pair: Select or create a new keypair
-    - User data (Copy the following user data): https://github.com/mariusforreal/devops-fully-automated-1-scripts/blob/main/deployment-servers-setup.sh
+    - User data (Copy the following user data): https://github.com/Cyndy12/devops-fully-automated-scripts/blob/main/deployment-servers-setup.sh
     - Launch Instance
     - After launching these deployment servers, attach a tag as **Key=Environment, value=dev/stage/prod** ( out of 6, each 2 instances could be tagges as one env)
 
@@ -52,7 +52,7 @@
     - Security Group (Open): 9090 and 22 to 0.0.0.0/0
     - Key pair: Select or create a new keypair
     - **Attach Prometheus server with IAM role having "AmazonEC2ReadOnlyAccess"**
-    - User data (Copy the following user data): https://github.com/mariusforreal/devops-fully-automated-1-scripts/blob/main/prometheus-setup.sh
+    - User data (Copy the following user data): https://github.com/Cyndy12/devops-fully-automated-scripts/blob/main/prometheus-setup.sh
     - Launch Instance
   
     - NB: Once provisioned, log in to Prometheus server
@@ -63,7 +63,7 @@
     - Instance type: t2.micro
     - Security Group (Open): 3000 and 22 to 0.0.0.0/0
     - Key pair: Select or create a new keypair
-    - User data (Copy the following user data): https://github.com/mariusforreal/devops-fully-automated-1-scripts/blob/main/grafana-setup.sh
+    - User data (Copy the following user data): https://github.com/Cyndy12/devops-fully-automated-scripts/blob/main/grafana-setup.sh
     - Launch Instance
 
 8) ###### Slack 
