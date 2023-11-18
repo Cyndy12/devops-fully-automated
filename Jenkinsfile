@@ -62,9 +62,10 @@ pipeline {
         stage('SonarQube Scan') {
           steps {
             sh """mvn sonar:sonar \
-                    -Dsonar.projectKey=java-project \
-                    -Dsonar.host.url=http://18.169.244.40:9000 \
-                    -Dsonar.login=9d6f6d036df44e17944761ee7bbcb2a551722981"""
+                    mvn sonar:sonar \
+                    -Dsonar.projectKey=sonar \
+                    -Dsonar.host.url=http://18.170.91.85:9000 \
+                    -Dsonar.login=690bd80ad0821d119485b11890bc0c840fd7183e"""
           }
         }
 
